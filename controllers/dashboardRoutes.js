@@ -1,12 +1,12 @@
 //create dashboard routes withAuth
-const router = require('express').Router();
-const {Project, User} = require('../models');
-const withAuth = require('../utils/auth');
+const router = require("express").Router();
+const { Post } = require("../models");
+const withAuth = require("../utils/auth");
 
-router.get('/', async (req, res) => {
-    try{
-        const 
+router.get("/", withAuth, async (req, res) => {
+    console.log('logged in!')
+});
 
 
-    }catch
-})
+
+module.exports=router
