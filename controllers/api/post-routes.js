@@ -34,13 +34,13 @@ router.put("/:id", withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 //create a route that deletes a post with auth
 router.delete("/:id", withAuth, async (req, res) => {
     try {
       const deleteData = await Post.destroy({
         where: {
-          id: req.params.id,
-          userid: req.session.userid,
+          id: req.params.id
         },
       });
       if (!deleteData) {

@@ -1,0 +1,24 @@
+// create a card that shows your post, have an input to update the post
+and one to delete it and create a button (2) edit and update
+<div class="card">
+        <div class="card-header">
+          Edit Post
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                  <label for="postTitle" class="form-label">Title:</label>
+                  <input type="text" class="form-input" id="postTitle">
+                </div>
+                <div class="mb-3">
+                  <label for="postBody" class="form-label">Content:</label>
+                  <textarea name="postBody" class="form-input"></textarea>
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Update Post</button>
+                <button type="button" id="deleteBtn" class="btn btn-primary">Delete</button>
+              </form>
+        </div>
+      </div>
+
+<script src="/js/edit.js"></script>

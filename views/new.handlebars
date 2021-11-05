@@ -2,3 +2,25 @@
 and has and input for the title and text area for the content for a new post
 also make sure there is a button to submit the post
  --}}
+ 
+  <div class="card">
+        <div class="card-header">
+          New Post
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                  <label for="postTitle" class="form-label">Title:</label>
+                  <input type="text" class="form-input" id="postTitle">
+                </div>
+                <div class="mb-3">
+                  <label for="postBody" class="form-label">Content:</label>
+                  <textarea name="postBody" class="form-input"></textarea>
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Create</button>
+              </form>
+        </div>
+      </div>
+
+      <script src="/js/new.js"></script>
