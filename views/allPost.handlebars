@@ -1,76 +1,18 @@
 <div>
-    {{#each posts}}
-    <a href="/dashboard/edit/{{id}}">
-    <H1>{{title}}</H1>
-    <p>{{format_date createdAt}}</p>
-    </a>
-    {{/each}}
+  {{#each posts}}
+    <div class="card">
+      <h2>
+        <a href="/post/{{id}}">{{title}}</a>
+      </h2>
+      <div>
+        Posted by
+        {{User.username}}
+        on
+        {{format_date createdAt}}
+      </div>
+      <div class="card-body">
+        {{body}}
+      </div>
+    </div>
+  {{/each}}
 </div>
-<body>
-
-    <div class="card">
-        <div class="card-header">
-            <h2>All Post</h2>
-            <p> </p>
-        </div>
-        <div class="card-body">
-
-        </div>
-    </div>
-
-    <!-- this card will display any comments that are attahed to the post -->
-    <div class="card">
-        <div class="card-header">
-            <h2>Title</h2>
-            <p>posted by </p>
-        </div>
-        <div class="card-body">
-
-        </div>
-    </div>
-
-    <!-- this card will allow the user to add a new comment -->
-
- <div class="card">
-        <div class="card-header">
-            <h2>Title</h2>
-            <p>posted by </p>
-        </div>
-        <div class="card-body">
-
-        </div>
-    </div>
-
-    <!-- this card will allow the user to add a new comment -->
-
-    <div class="card">
-        <div class="card-header">
-            <h2>Title</h2>
-            <p>posted by </p>
-        </div>
-        <div class="card-body">
-            <form>
-                <div class="mb-3">
-                    <label for="postTitle" class="form-label">Title:</label>
-                    <input type="text" class="form-input" id="postTitle">
-                </div>
-              
-                <div class="card">
-
-                </div>
-                <div class="card-header">
-                        <h2>Title</h2>
-                        <p>posted by </p>
-                    </div>
-                    <div class="card-body">
-            
-                    </div>
-             
-    </div>
-
-
-</div>
-</body>
-
-</html>
-<script src="../public/js/allPost.js"></script>

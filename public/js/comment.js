@@ -1,11 +1,11 @@
 const newComment = async (event) => {
     event.preventDefault();
   
-    const comment = document.querySelector('#comment-desc').value.trim();
-    const post_id = document.querySelector('#comment-post-id').value;
+    const comment = document.querySelector('textarea[name="comment-body"]').value.trim();
+    const post_id = document.querySelector('input[name="post-id"]').value;
   
     if (comment) {
-      const response = await fetch(`/api/comments`, {
+      await fetch(`/api/comments`, {
         method: 'POST',
         body: JSON.stringify({ comment, post_id }),
         headers: {
@@ -13,11 +13,7 @@ const newComment = async (event) => {
         },
       });
   
-      if (response.ok) {
-        document.location.replace(`/post/${post_id}`);
-      } else {
-        alert('Failed to create comment');
-      }
+  document.location.reload();
     }
   };
   
