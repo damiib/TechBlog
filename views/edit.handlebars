@@ -5,14 +5,15 @@ and one to delete it and create a button (2) edit and update
           Edit Post
         </div>
         <div class="card-body">
-            <form>
+            <form id="edit">
+              <input type="hidden" name="postId" value="{{post.id}}"/>
                 <div class="mb-3">
                   <label for="postTitle" class="form-label">Title:</label>
-                  <input type="text" class="form-input" id="postTitle">
+                  <input type="text" class="form-input" name="postTitle" value={{post.title}}>
                 </div>
                 <div class="mb-3">
                   <label for="postBody" class="form-label">Content:</label>
-                  <textarea name="postBody" class="form-input"></textarea>
+                  <textarea name="postBody" class="form-input">{{post.body}}</textarea>
                 </div>
                
                 <button type="submit" class="btn btn-primary">Update Post</button>
