@@ -1,26 +1,25 @@
 const newPost = async function(event){
 event.preventDefault();
 
-const postTitle = document.querySelector('input[name="Title"]').value;
+const title = document.querySelector('input[name="postTitle"]').value;
 
-const postBody=document.querySelector('textarea[name="Content"]').value;
-if (postTitle && postBody) {
+const body=document.querySelector('textarea[name="newPost"]').value;
+
       
-    const response = await fetch('/api/post', {
+    await fetch('/api/post', {
       method: 'POST',
-      body: JSON.stringify({ postTitle, postBody }),
+      body: JSON.stringify({ title, body }),
       headers: { 'Content-Type': 'application/json' },
     });
 
-    if (response.ok) {
-        document.location.replace('/new');
-      } else {
-        alert('Failed to delete project');
-      }
-    }
+
+        document.location.replace('/dashboard');
+     
+      
+
   
 };
 
 document
 .querySelector('#new')
-.addEventListener('submit', newHandler);
+.addEventListener('submit', newPost);

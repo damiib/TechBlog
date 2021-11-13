@@ -58,7 +58,7 @@ router.get('/post/:id', async (req, res)=>{
 router.get('/login', async (req, res)=>{
 // create an if statement that if user is not logged in (research the auth file in the utils folder)  reditect the user to the "/"
 
-if(req.session.logged_in){
+if(req.session.loggedIn){
     res.redirect('/');
     return;
 }
@@ -71,7 +71,7 @@ res.render('login');
 
 router.get('/signup', async (req, res)=>{
 // create an if statement that if user is not logged in (research the auth file in the utils folder)  reditect the user to the "/"
-if (req.session.logged_in) {
+if (req.session.loggedIn) {
     res.redirect('/');
 }
 //render signup handlebar

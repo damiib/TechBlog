@@ -18,9 +18,7 @@
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="/">Home</a>
         <a class="nav-link" href="/dashboard">Dashboard</a>
-        <a class="nav-link" href="/login">LogIn</a>
-        <a class="nav-link" href="/signup">Signup</a>
-        <a class="nav-link disabled" href="#">LogOut</a>
+        <a class="nav-link" href="/" id="logout">Logout</a>
       </div>
     </div>
   </div>
@@ -29,6 +27,12 @@
 
     <main>
         {{{body}}}
+
+<footer class="footer d-flex justify-center">
+
+       <a href="/dashboard/newpost">Create New Post</a> 
+</footer>
     </main>
+     <script src='/js/logout.js'></script>
 </body>
 </html>

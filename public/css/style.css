@@ -1,0 +1,21 @@
+header, .project:not(:last-child) {
+    border-bottom: 1px solid rgb(129, 127, 127);
+  }
+  
+  .logout-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #11cc30;
+    text-decoration: none;
+    font-size: 100%;
+  }
+  
+  .logout-button:hover {
+    color: #bfd7e2;
+    text-decoration: underline;
+  }
+  
+  
+  
