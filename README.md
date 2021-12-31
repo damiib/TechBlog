@@ -2,8 +2,8 @@
 
 brown@MacBook-Pro ReadMe-Generator % npm.start
 ? What is the name of your project? TechBlog
-? What is your GitHub user name? DamiiB
-? What is your email? damlbro013@gmail.com
+? What is your GitHub user name? Sheluvsdesign
+? What is your email? a@gmail.com
 ? Describe your project? The project is a TechBlog that you can create post in.  You can edit your post and delete your poste.  You can also create a new post if you like to.  This blog allows you to view all blogs that have been posted. It is easy to navigate.  You must sign up before and login before posting.  If you do not sign up, you will not be able to post on this blog.
 ? What are the installation instructions? I insta
 lled express and inquirer
@@ -17,8 +17,8 @@ ng to your project? There is not anything the rea
 der needs to know.
 {
   title: 'TechBlog',
-  GitHub: 'DamiiB',
-  Email: 'damlbro013@gmail.com',
+  GitHub: 'Sheluvsdesign',
+  Email: 'a@gmail.com',
   description: 'The project is a blog.  The user will have to create a user name and password.  After the user name and password are create, a post can be made.  The user can view their post, update their post or delete their post.
   installation: 'I installed sequelize',
   usage: 'none'
@@ -63,6 +63,6 @@ der needs to know.
 
   ## Questions
 
-  [damiib](https://github.com/damiib)
+  [sheluvsdesign](https://github.com/sheluvsdesign)
 
-If you have questions, please contact me at: damlbro013@gmail.com
+If you have questions, please contact me at: a@gmail.com
